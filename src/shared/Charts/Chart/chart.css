@@ -1,0 +1,105 @@
+.chart__wrapper {
+    width: 100%;
+    background-color: var(--white);
+    min-height: 600px;
+    border-radius: 30px;
+    margin: 50px 0;
+    padding: 25px;
+    text-align: start;
+    box-shadow: -4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.chart__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.chart__text {
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.chart__button {
+    font-size: 16px;
+    width: 31%;
+    padding: 15px;
+    border: 1px solid var(--blue);
+    border-radius: 6px;
+}
+
+.button-period {
+    font-size: 16px;
+    width: 31%;
+    border: 1px solid var(--blue);
+    border-radius: 6px;
+    text-align: center;
+}
+
+.chart__button:hover, .button-period:hover {
+    color: var(--white);
+    background-color: var(--blue);
+    transition: 0.4s;
+}
+
+.line-chart {
+    max-height: 400px;
+    overflow-x: scroll;
+}
+
+.datepicker-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.datepicker-block__from {
+    margin-right: 20px;
+}
+
+.datepicker-block__from, .datepicker-block__to {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.datepicker-block__from-title {
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.react-datepicker__input-container input {
+    border: 1px solid var(--blue);
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.react-datepicker__input-container input:hover {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.datepicker-from:hover.datepicker-from::placeholder, .datepicker-to:hover.datepicker-to::placeholder {
+    color: var(--white);
+}
+
+.react-datepicker-ignore-onclickoutside {
+    color: var(--white);
+    background-color: var(--blue);
+    outline: none;
+}
+
+.react-datepicker-ignore-onclickoutside::placeholder {
+    color: var(--white);
+}
+
+.active {
+    background-color: var(--blue);
+    color: var(--white);
+}
